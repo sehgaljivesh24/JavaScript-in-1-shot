@@ -8,6 +8,13 @@ let accountEmail = "jivesh@google.com";
 var accountPassword = "12345";
 accountCity = "Patiala";
 
+// Variable is declared but value is not assigned to it -- Output = Undefined.
+let accountState;
+
+/*
+Prefer not to use var
+Because of Block Scope and Function Scope
+*/
 
 console.log(accountId);
-console.table([accountId,accountEmail,accountPassword]);
+console.table([accountId,accountEmail,accountPassword,accountState]);
