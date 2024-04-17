@@ -48,3 +48,12 @@ function functionName(){
 let myYoutubeName = "JiveshSehgal";
 
 
+// ******* AMAZING Notes
+// Ek Variable mein koi bhi datatype ki value store kr sakte hain
+
+// Let's Suppose - Ek Variable mein Primitive Datatype ki value stored hai
+// Ab hum, dusra variable banate hain - usmein agar hum first variable ko assign kr deingein - then first variable mein stored value ki copy create hokar second variable mein store ho jayegi.
+
+
+// Now Let's suppose - Ek variable mein hum Reference Datatype ki value store kr rhe - Then it stores reference of original value
+// Humne 2nd variable banaya - and we try to assign the value stored in first variable, - then it will store the reference of value which first variable was storing
