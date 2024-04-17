@@ -36,3 +36,15 @@ const obj = {
 function functionName(){
     console.log("My name is Jivesh");
 }
+
+
+
+// ******************************************************************
+// 2 types of memory - Stack & Heap
+
+// Stack (Primitive)=> value ki copy milti hai
+// Heap (Non-Primtive/ Reference) => reference milta hai "original value" ka - original value mein hi changes hote hain
+
+let myYoutubeName = "JiveshSehgal";
+
+
