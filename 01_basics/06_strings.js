@@ -13,7 +13,7 @@ console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
 
 // 2nd way to Create STRING
-const gameName = new String('Jiveshjs');
+const gameName = new String('Jivesh-js-com');
 console.log(gameName);
 
 // We can access Characters in the String using stringName[index]
@@ -27,8 +27,39 @@ console.log(gameName.length);
 
 // Can access other methods also on string
 console.log(gameName.toUpperCase()); // It does not make changes to Original Value - Because these are Primitive Datatypes
+
+// indexOf
 console.log(gameName.indexOf('t'));
 
+// charAt
+console.log(gameName.charAt(0));
+
+// SUBSTRING
+const newString = gameName.substring(0,3);
+console.log(newString);
+
+// SLICE
+const anotherString = gameName.slice(-8); // slice can take negative indexes,
+console.log(anotherString);
+
+// TRIM - removes leading & trailing white spaces
+const newStringOne = "   Jivesh.    ";
+console.log(newStringOne);
+const thirdString = newStringOne.trim();
+console.log(thirdString);
+
+
+// REPLACE
+const url = "https://jivesh.com/jivesh%20sehgal";
+console.log(url.replace('%20','-'));
+
+
+// INCLUDES
+console.log(url.includes('jivesh'));
+
+
+// SPLIT - Break strings based on pattern and store it in Array 
+console.log(gameName.split('-'));
 
 
 
