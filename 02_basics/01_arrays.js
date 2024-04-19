@@ -30,9 +30,31 @@ console.log(myArray);
 myArray.shift(); // Remove elements from beginning
 console.log(myArray);
 
+console.log(myArray.includes(5));
+
+console.log(myArray.indexOf(true));
+
+const newArray = myArray.join(); // Converts Array into String - comma separated values
+console.log(newArray);
 
 
+// Slice, Splice
+const myArray3 = myArray.slice(2,5); // returns a copy of section of Array 
+console.log(myArray3);
+console.log(typeof myArray3);
 
+console.log('***************************');
+
+
+console.log("A ", myArray);
+const myn1 = myArray.slice(1,3); // returns a copy of section of array
+console.log(myn1);
+console.log("B ", myArray);
+
+const myn2 = myArray.splice(1,3); // Splice deletes the elements from original array
+console.log(myn2); // array containing deleted elements
+
+console.log("C", myArray);
 
 
 
