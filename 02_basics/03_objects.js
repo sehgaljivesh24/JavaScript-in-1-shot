@@ -7,9 +7,14 @@
 // Object.create
 
 
+// Creating a symbol - declaring a symbol
+const mySym = Symbol('key1');
+
 // Object Literal
 const JsUser = {
     name: "Jivesh",
+    "full name":"Jivesh Sehgal",
+    [mySym] = "myKey1",
     age: 23,
     location: "Patiala",
     email: 'jivesh@google.com',
@@ -17,8 +22,15 @@ const JsUser = {
     lastLogginDays: ["Monday","Saturday"]
 };
 
-// ByDefault property names are stored in form of strings
+// Access Properties of object using . or []
+// JsUser["email"];  // Internally Property names are denoted in string
 console.log(JsUser.name);
 console.log(JsUser["name"]);
 
+// If we want to access a Property whose name has multiple words - we can't do it using dot
+console.log(JsUser['full name']);
 
+
+
+// How to use SYMBOL - as a key in property or include in Object
+console.log(JsUser[mySym]);
