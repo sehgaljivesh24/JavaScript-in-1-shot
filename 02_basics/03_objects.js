@@ -14,7 +14,7 @@ const mySym = Symbol('key1');
 const JsUser = {
     name: "Jivesh",
     "full name":"Jivesh Sehgal",
-    [mySym] = "myKey1",
+    [mySym] : "myKey1", // Added Symbol as Property Name
     age: 23,
     location: "Patiala",
     email: 'jivesh@google.com',
@@ -31,6 +31,15 @@ console.log(JsUser["name"]);
 console.log(JsUser['full name']);
 
 
-
 // How to use SYMBOL - as a key in property or include in Object
 console.log(JsUser[mySym]);
+
+
+// Changing Values of a Property
+JsUser.email = "jiveshsehgal@google.com";
+
+
+// FREEZING the Object - We can prevent Object from changing value of its properties
+Object.freeze(JsUser); 
+
+
