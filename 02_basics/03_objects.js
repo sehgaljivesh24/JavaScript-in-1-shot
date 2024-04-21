@@ -39,7 +39,15 @@ console.log(JsUser[mySym]);
 JsUser.email = "jiveshsehgal@google.com";
 
 
-// FREEZING the Object - We can prevent Object from changing value of its properties
+// FREEZING the Object - We can prevent Object adding or changing value of its properties
 Object.freeze(JsUser); 
+JsUser.email = "jivesh@chatgpt.com"; // value has not been changed
+console.log(JsUser.email);
 
+console.log(JsUser);
 
+JsUser.greeting = function(){
+    console.log("Hello jS User");
+}
+
+console.log(JsUser.greeting);
