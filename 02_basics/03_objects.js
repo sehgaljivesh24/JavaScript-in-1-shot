@@ -40,14 +40,26 @@ JsUser.email = "jiveshsehgal@google.com";
 
 
 // FREEZING the Object - We can prevent Object adding or changing value of its properties
-Object.freeze(JsUser); 
+// Object.freeze(JsUser); 
 JsUser.email = "jivesh@chatgpt.com"; // value has not been changed
 console.log(JsUser.email);
 
 console.log(JsUser);
 
+// JsUser Object mein 'greeting' naam ki property add krdi, jismein humne ek function define krke usko assign krdiya
+// 'greeting' naam ki property holds the reference of the function and can be used to call it.
 JsUser.greeting = function(){
     console.log("Hello jS User");
 }
 
-console.log(JsUser.greeting);
+JsUser.greeting(); // JsUser ki greeting property mein jo fn hai usse call kra
+
+console.log(JsUser.greeting); // JsUser ki 'greeting' property stores the reference of the function
+
+
+// If we want to access the Properties of Object inside the Function - use this keyword
+JsUser.greetingTwo = function(){
+    console.log(`Hello JS User, ${this.name} `); // Prints Hello JsUSer & value stored in the Calling Object's name property
+};
+
+JsUser.greetingTwo();
