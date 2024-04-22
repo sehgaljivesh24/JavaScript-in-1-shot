@@ -42,5 +42,15 @@ const users = [
 ];
 console.log(users[0].id);
 
+console.log(tinderUser);
 
+// Object.keys() - return array containing keys
+console.log(Object.keys(tinderUser));
 
+// Object.values - return array containing values
+console.log(Object.values(tinderUser));
+
+console.log(Object.entries(tinderUser));
+
+// Kya isLoggedIn naam se property hai?
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
