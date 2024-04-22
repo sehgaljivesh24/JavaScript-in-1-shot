@@ -53,4 +53,22 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 // Kya isLoggedIn naam se property hai?
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+// Object Destructuring
+// It is a syntax of extracting values from object properties & assigning to the variables.
+
+const course = {
+  courseName: "js in hindi",
+  price: 999,
+  courseInstructor: "hitesh",
+};
+
+// Syntax
+// const {}curly braces = object (kahain se value extract krni hai)
+// courseInstructor property ki value extract krni hai and variable - instructor naam se create ho jayega 
+const {courseInstructor: instructor} = course; 
+console.log(instructor);
+
+
+
