@@ -38,7 +38,8 @@ console.log(logInUserMessage()); // No argument is passed, Hence variable's valu
 
 
 // Default Parameters
-function logInUserMessage2(userName = "User") {
+function logInUserMessage2(userName = "Sam") {
+    // If no value is passed - default value is Sam for userName
     return `${userName} just logged in`;
 }
 console.log(logInUserMessage2()); // When no argument is passed when function is called, we have default option
