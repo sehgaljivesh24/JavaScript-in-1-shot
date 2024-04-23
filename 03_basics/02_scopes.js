@@ -32,8 +32,14 @@ console.log(x);
 
 if (true) {
   let x = 25;
-  console.log("Inner:", x);
+  console.log("Inner:", x); // x = 25 is printed
 }
 console.log(x); // x = 200
 
 // If a variable is declared using let in global scope & same variable created in {} local/Block scope, it does not change the value of variable created in global scope
+
+// -----------------------------------------------------------------------------------------------------------------------------
+
+
+// Important -- Global Scope is different in Node environment & in Browser
+
