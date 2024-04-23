@@ -79,3 +79,18 @@ if (true) {
   // console.log(website);
 }
 // console.log(userName);
+
+// --------------  INTERESTING CONCEPT - HOISTING -----------------
+
+// function defined using Function Declaration
+addOne(10);
+function addOne(num1) {
+  return num1 + 1;
+}
+// addOne(10);
+
+// function defined using Function Expression
+const addTwo = function (num1) {
+  return num1 + 2;
+};
+addTwo(10);
