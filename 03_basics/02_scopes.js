@@ -83,14 +83,19 @@ if (true) {
 // --------------  INTERESTING CONCEPT - HOISTING -----------------
 
 // function defined using Function Declaration
-addOne(10);
+console.log(addOne(10));
 function addOne(num1) {
   return num1 + 1;
 }
 // addOne(10);
 
 // function defined using Function Expression
+// addTwo(10);
 const addTwo = function (num1) {
   return num1 + 2;
 };
 addTwo(10);
+
+// Function defined using Function Expression can't be call/invoked before defining
+// Because In Function Expression - function is defined at runtime
+// whereas In Function Declaration - function is defined at compile time
