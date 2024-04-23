@@ -58,7 +58,7 @@ function calculateCartPrice(val1, val2, ...restParameter) {
 let cartValue = calculateCartPrice(100, 200, 300, 250);
 console.log(cartValue);
 
-// Example -
+// 4. Passing Object in Functions
 const user = {
   userName: "Jivesh",
   age: 23,
@@ -73,3 +73,13 @@ function handleObject(anyObject) {
 }
 
 handleObject(user);
+handleObject({ userName: "Ponu", price: 399 });
+
+// 5. Passing Arrays in Functions
+const myNewArray = [1, 2, 3, 4];
+
+function returnSecondValue(array) {
+  return array[1];
+}
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([2,55,666,7777]));
