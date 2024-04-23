@@ -40,6 +40,26 @@ console.log(x); // x = 200
 
 // -----------------------------------------------------------------------------------------------------------------------------
 
-
 // Important -- Global Scope is different in Node environment & in Browser
 
+// -----------------------------------------------------------------------------------------------------------------------------
+
+// Nested Scope
+
+// Rule - Chote agar Bade se Ice Cream mangein toh chalta hai, Par agar Bade chote se mange toh kharab lagta hai
+
+function one() {
+  const userName = "Jivesh";
+
+  function two() {
+    const website = "youtube";
+    console.log(userName);
+  }
+  console.log(website);
+
+  two();
+}
+// Sabse Bada - one hai , Chota two hai   -- Chote ke liye uske bahar sab kuch Global hi hai
+// 'Two', 'One' ke saare variables access kr sakta hai BUT 'One', 'Two' ke variables access nhi kr sakta  -- Bcoz 'Two' ke scope ke bahar se kese access krein
+// Jo bhi variable 'Two' mein declare kre voh andar hi mar gye 
+one();
