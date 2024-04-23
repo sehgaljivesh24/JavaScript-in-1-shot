@@ -53,13 +53,29 @@ function one() {
 
   function two() {
     const website = "youtube";
-    console.log(userName);
+    console.log("userName accessed inside two():", userName);
   }
-  console.log(website); // can't be accessed outside 'two'
+  //   console.log(website); // can't be accessed outside 'two'
 
   two();
 }
 // Sabse Bada - one hai , Chota two hai   -- Chote ke liye uske bahar sab kuch Global hi hai
 // 'Two', 'One' ke saare variables access kr sakta hai BUT 'One', 'Two' ke variables access nhi kr sakta  -- Bcoz 'Two' ke scope ke bahar se kese access krein
-// Jo bhi variable 'Two' mein declare kre voh andar hi mar gye 
+// Jo bhi variable 'Two' mein declare kre voh andar hi mar gye
 one();
+
+// InShort - Child function, Parent fn ke variables ko access kr pata and Parent Child ke andar ke nhi kr pata
+
+// -----------------------------------------------------------------------------------------------------------------------------
+
+// In case of 'if' statements
+
+if (true) {
+  const userName = "Jivesh Sehgal";
+  if (true) {
+    const website = "youtube";
+    console.log(userName + website);
+  }
+  // console.log(website);
+}
+// console.log(userName);
