@@ -55,7 +55,7 @@ function one() {
     const website = "youtube";
     console.log(userName);
   }
-  console.log(website);
+  console.log(website); // can't be accessed outside 'two'
 
   two();
 }
