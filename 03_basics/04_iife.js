@@ -5,7 +5,16 @@
 
 // Just WRAP the whole Function around () Paranthesis and call it
 (function chai() {
+    // named IIFE
   console.log(`DB Connected`);
 })();
 
 // We are defining the Function inside Paranthesis and Calling it
+((name) => {
+    // Unnamed IIFE
+    // name - is a parameter
+  console.log(`DB Connected TWO - ${name}`);
+})('Jivesh');
+
+
+// 2 IIFE likhne ke liye, First vale ke aage ; lagado
