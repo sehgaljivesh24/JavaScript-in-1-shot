@@ -27,3 +27,29 @@ console.log(this);
 
 // Jab hum object ka method call kreingein - uss function ke andar object ki properties ko access krne ke liye - 'this' keyword ka use kreingein
 // this - matlab currentObject
+
+// Printing value of 'this' keyword inside Function Declaration
+// function chai() {
+//   let userName = "Jivesh";
+//   console.log(this.userName);
+// }
+
+// chai(); // this only works when Object is in context
+
+// Printing value of 'this' keyword inside Function Expression
+// const chai = function () {
+//   let userName = "Jivesh";
+//   console.log(this.userName);
+// };
+
+// Printing value of 'this' keyword inside Arrow Function
+const chai = () => {
+  let userName = "Jivesh";
+  console.log(this); // returns empty Object
+};
+
+chai();
+
+
+// Arrow Functions ko Variable mein bhi hold kr sakte hain
+// Variable stores reference of arrow function
