@@ -50,6 +50,18 @@ const chai = () => {
 
 chai();
 
-
 // Arrow Functions ko Variable mein bhi hold kr sakte hain
 // Variable stores reference of arrow function
+const addTwo = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(addTwo(2, 4));
+
+// Implicit Return - Only 1 line inside Curly Brackets that too return
+// const addThree = (num1, num2, num3) => num1 + num2 + num3;
+
+const addThree = (num1, num2, num3) => num1 + num2 + num3; // Jo return kr rhe Paranthesis mein wrap krdo
+console.log(addThree(1, 2, 3));
+
+const Objreturn = () => ({ userName: "Jivesh" });
+console.log(Objreturn);
