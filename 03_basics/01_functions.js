@@ -45,6 +45,7 @@ console.log(logInUserMessage2()); // When no argument is passed when function is
 
 // 3. Rest Parameters
 // Lets suppose we have defined a function which takes only 1 input - Parameter & as when we call this function we pass more than 1 arguments
+// The remaining/rest of the values will be stored inside an array 
 // So the TASK is used to store them under 1 variable with help of - ...restOperator
 function calculateCartPrice(val1, val2, ...restParameter) {
   // restParameter is the array which stores the arguments in it
