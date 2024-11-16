@@ -24,7 +24,7 @@ let valueInNumber = Number(score);
 
 // Converting values in BOOLEAN
 
-let loggedIn = undefined; 
+let loggedIn = undefined;
 
 let valueInBoolean = Boolean(loggedIn);
 
@@ -42,8 +42,8 @@ console.log(typeof valueInBoolean);
 let someValue = false;
 
 let valueInString = String(someValue);
-console.log(valueInString);
-console.log(typeof valueInString);
+console.log("valueInString", valueInString);
+console.log("typeof valueInString", typeof valueInString);
 
 
 
