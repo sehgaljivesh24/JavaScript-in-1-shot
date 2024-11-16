@@ -20,4 +20,4 @@ Because of Block Scope and Function Scope
 */
 
 console.log(accountId);
-console.table([accountId,accountEmail,accountPassword,accountState]);
+console.table([accountId, accountEmail, accountPassword, accountState]);
