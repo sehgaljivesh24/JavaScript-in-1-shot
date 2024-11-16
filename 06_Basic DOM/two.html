@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai aur Code - Basic DOM 2</title>
+  </head>
+  <body style="background-color: #212121; color: white">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div clasFs="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+  </body>
+  <script>
+    // const divParent = document.getElementsByClassName('parent');
+    let parent = document.querySelector("div.parent");
+    // console.log(parent);
+    // console.log(parent.children); // Returns HTML Collection - Array Jaisa
+    // console.log(parent.children[0]);
+    // console.log(parent.children[0].innerText);
+    // console.log(parent.children[0].innerHTML);
+
+    // let childElements = parent.children;
+    // for (let i = 0; i < childElements.length; i++) {
+    //     const element = childElements[i];
+    //     console.log(element.innerHTML);
+    // }
+
+    // Access Child Element of the Parent Element
+    // parent.children[1].style.color = "orange";
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+
+    let dayOne = document.querySelector(".day");
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    console.log(parent.childNodes);
+  </script>
+</html>

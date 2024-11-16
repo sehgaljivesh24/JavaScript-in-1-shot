@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai aur Code - Basic DOM 4</title>
+  </head>
+  <body style="background-color: #212121; color: white">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    // The below function is not optimized - as it has to traverse the entire tree to add the element
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = langName;
+      const ul = document.querySelector(".language");
+      ul.appendChild(li);
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+
+    // Optimized way to add element
+    function addOptiLanguage(langName) {
+      const li = document.createElement("li");
+      const addText = document.createTextNode(langName);
+      li.appendChild(addText);
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptiLanguage("golang");
+
+    // Edit values
+    const secondLang = document.querySelector("li:nth-child(2)");
+    // console.log(secondLang);
+    // secondLang.innerHTML = "mojo"; // It is not an optimizied approach
+    const newLi = document.createElement("li");
+    newLi.appendChild(document.createTextNode("mojo"));
+    secondLang.replaceWith(newLi);
+
+    const firstChild = document.querySelector("li:first-child");
+    console.log(firstChild);
+    const newElement = document.createElement("li");
+    newElement.appendChild(document.createTextNode("TypeScript"));
+    firstChild.replaceWith(newElement);
+
+    // Remove
+    const lastChild = document.querySelector("li:last-child");
+    lastChild.remove();
+  </script>
+</html>
