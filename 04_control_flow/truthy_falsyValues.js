@@ -29,6 +29,10 @@ if (Object.keys(emptyObject).length === 0) {
 // Real situation mein hota kya hai ki - Kahin baar hum Database ko call lagate hain but koi reponse na ane pr
 // hum - null hi store krva dete hain
 
+// The nullish coalescing operator (??) is a logical operator in JavaScript that returns 
+// its right-hand side operand when its left-hand side operand is null or undefined, 
+// and otherwise returns its left-hand side operand
+
 let val1;
 // val1 = 5 ?? 10;
 // val1 = null ?? 10;
