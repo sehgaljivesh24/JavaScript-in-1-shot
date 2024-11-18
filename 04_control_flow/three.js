@@ -27,4 +27,13 @@ for (const char of greetings) {
 console.log('---------------------------------------');
 // ---------------------------------------
 
-// Maps
+// Maps DS
+// It is also a Data Structure
+// Data is stored in key,value pair
+// Keys should be unique (should occur once)
+// Original Insertion Order is maintained
+//
+
+// Creating a new map object
+const map = new Map();
+// map.
