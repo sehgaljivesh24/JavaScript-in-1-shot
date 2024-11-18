@@ -32,6 +32,7 @@ if (Object.keys(emptyObject).length === 0) {
 // The nullish coalescing operator (??) is a logical operator in JavaScript that returns 
 // its right-hand side operand when its left-hand side operand is null or undefined, 
 // and otherwise returns its left-hand side operand
+// Use - This operator is particularly useful for providing default values to variables without overriding other falsy values like 0, '', or false
 
 let val1;
 // val1 = 5 ?? 10;
