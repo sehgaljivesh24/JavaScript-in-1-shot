@@ -6,7 +6,7 @@
 // let array1 = [{}, {}, {}];
 const arr = [1, 2, 3, 4, 5];
 
-// Object and Arrays both are Iterable
+// Object and Arrays, Strings all are Iterable
 // for of loop can be applied on both of them
 // Syntax -> for(let element of object){}
 // On which object we want to apply the loop on
@@ -15,3 +15,16 @@ const arr = [1, 2, 3, 4, 5];
 for (let element of arr) {
     console.log(element);
 }
+
+// for of loop - on String
+// Iterate on each individual character
+const greetings = "Hello World";
+for (const char of greetings) {
+    console.log(char);
+}
+
+// ---------------------------------------
+console.log('---------------------------------------');
+// ---------------------------------------
+
+// Maps
